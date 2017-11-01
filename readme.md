@@ -1,12 +1,12 @@
 # addrepo
 
-Minimal CLI wrapper for [node-gitlab] package to easy creating new repositories on a GitLab server and clone it localy, all in a single command.
+Minimal CLI wrapper for [node-gitlab] package to easy creating new repositories on a GitLab server and clone it locally, all in a single command.
 
 ```
 addrepo my-new-repository
 ```
 
->**IMPORTANT**: You need to have a SSH key propertly configured in your local machine and on GitLab server to be able to clone the repository after is created.
+>**IMPORTANT**: You must to have an SSH key properly configured on your local machine and on the GitLab server in order to be able to clone the repository after is has been created.
 
 
 ## Options
@@ -35,7 +35,7 @@ npm install addrepo -g
 
 ## Configuration
 
-Use this command to initialize the configurtation process:
+Use this command to initialize the configuration process:
 ```
 addrepo -i
 ``` 
@@ -59,7 +59,7 @@ addrepo my-new-repository
 ```
 >**Note**: If there is already a repository with the same name for the current user, the action will fail. 
 
-### Create a repository, dont clone it, and output the HTTP url
+### Create a repository, dont clone it, and output the HTTP URL
 ```
 addrepo my-new-repository -n -w
 ```
@@ -71,7 +71,7 @@ This option require admin permissions in the configured user.
 addrepo my-new-repository -a 67
 ```
 
->**Note**: If the current user dont have permisions to assign a project to a uer group, the project will be created on the current user.
+>**Note**: If the current user don't have permissions to assign a project to a group, the project will be created for the current user.
 
 
 [node-gitlab]: https://github.com/node-gitlab/node-gitlab
