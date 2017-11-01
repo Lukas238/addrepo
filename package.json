@@ -1,0 +1,34 @@
+{
+  "name": "addrepo",
+  "version": "1.0.0",
+  "description": "CLI node tool to create a GitLab repository",
+  "main": "addrepo.js",
+  "author": {
+    "name": "Lucas Dasso",
+    "email": "Dasso.Lucas@c238.com.ar",
+    "web": "http://www.C238.com.ar/"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "gitlab": "^1.7.1",
+    "inquirer": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=6.11.2"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:Lukas238/addrepo.git"
+    }
+  ],
+  "homepage": "https://github.com/Lukas238/addrepo",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "addrepo": "./addrepo.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
