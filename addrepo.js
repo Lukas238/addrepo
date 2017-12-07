@@ -51,7 +51,8 @@ function outpuRepoUrl(){
 
 function getRepoUrl(){
     gitlab.projects.show(repo_data.id, function (project) {
-        if( repo_dataowner.id != project.owner.id){
+
+        if( options.assign != project.owner.id){
             console.log('Unable to assign project to group "'+options.assign+'".\n\nType "addrepo --help" for help.');
         }
 
