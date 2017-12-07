@@ -1,6 +1,6 @@
 {
   "name": "addrepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI node tool to create a GitLab repository",
   "main": "addrepo.js",
   "author": {
